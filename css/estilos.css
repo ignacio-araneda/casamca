@@ -1,0 +1,285 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?gemgay');
+	src:url('../fonts/icomoon.eot?#iefixgemgay') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?gemgay') format('woff'),
+		url('../fonts/icomoon.ttf?gemgay') format('truetype'),
+		url('../fonts/icomoon.svg?gemgay#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-menu:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\f082";
+}
+.icon-youtube:before {
+	content: "\f166";
+}
+.icon-vimeo2:before {
+	content: "\f194";
+}
+
+
+body 
+{
+	background: #ECF0F1;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+header 
+{
+	background: #4D87CE;
+	
+}
+
+header #logo_nav, header #menu
+{
+	display: inline-block;
+}
+
+header #box_nav_mob, header #box_logo_nav
+{
+	display: block;
+
+}
+header #box_nav_mob
+{
+	display: none;
+}
+header #menu1 ul
+{
+	padding: 1em 1.5em ;
+	margin: 0;
+}
+header #menu1 li 
+{
+	list-style-type: none;
+	padding: .9em;
+	
+}
+header #menu1 li:hover 
+{
+	background: #3498DB;
+}
+
+header #menu1 li a
+{
+	color: white;
+	font-size: 1.2em;
+	font-style: normal;
+	padding: 0.5em 6em 0.5em 0em;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+header #menu2
+
+{
+	float: right;
+	display: none;
+}
+
+header #menu li 
+{
+	display: block;
+}
+
+footer
+{
+	background: #424242;
+	min-height: 100px;
+	margin-top: 1.5em;
+}
+
+#art_social p  
+{
+	text-align: center;
+}
+
+#art_social p a 
+{
+	text-decoration: none;
+	font-size: 3em;
+	color: #4D87CE;
+	margin: .2em;
+
+}
+
+#bmedio:before
+ {
+ 	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 20px solid #ECF0F1;
+	bottom: -20px;
+	content: "";
+	height: 0;
+	left: 37%;
+	position: absolute;
+	top: 0;
+	width: 0;
+ }
+
+
+#social
+{
+	border-bottom: 1px #A7A7A7 solid;
+	color: #4D87CE;
+	font-size: 1.5em;
+	margin: 1.5em 5% 0em 5%;
+	max-width: 90%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+#logo_nav, .amenu
+{
+	display: inline-block;
+	 padding: 0 0;
+	 margin: 0;
+	 vertical-align: middle;
+
+}
+
+#video, .box_predicas
+{
+	color: #4D87CE;
+	font-size: 1.2em;
+	text-align: center;
+	max-width: 90%;
+	background: white;
+	padding: .3em;	
+	margin: 1em 5% 0em 5%;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#video iframe
+{
+	width: 95%;
+	margin-top: .2em;
+
+
+}
+
+#welcome
+{
+	color: #4c4c4c;
+	float: right;
+	font-size: 1em;
+	margin: 0 ;
+	padding:4.5em 0 1em .5em;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+#welcome .rojo
+{
+	color: green;
+}
+
+ .amenu 
+ {
+ 	float: right;
+ 	margin: .5em .5em 0 0;
+ 	font-size: 2em;
+ 	color:white;
+ 	text-decoration: none;
+
+ }
+
+ .blanco
+ {
+ 	margin: 0;
+ 	background: white;
+ 	position: relative;
+ 	padding-bottom: 1em;
+ }
+
+ .blanco:after
+ {
+ 	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 20px solid white;
+	bottom: -20px;
+	content: "";
+	height: 0;
+	left: 37%;
+	position: absolute;
+	width: 0;
+ }
+
+.box_predicas
+{
+	padding: 1em 0 1em 0;
+	text-transform: none;
+}
+
+.blanco .contenedor #welcome, .blanco .contenedor figure
+
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.blanco .contenedor figure
+{
+	float: right;
+	margin: 1em 1em 0 1em;
+}
+
+.blanco .contenedor figure img
+
+{   
+	width: 127px;
+/*	border-radius: 50%;
+	box-shadow: rgba(32,255,0,.9) 0px 0px 50px;*/
+
+}
+ 
+.contenedor
+{
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
+.gris
+{
+
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.noticia
+{
+	background: #ECF0F1;
+	margin: .5em 5% 0em 5%;
+	max-width: 90%;
+	padding-top: 1em;
+
+
+}
+
