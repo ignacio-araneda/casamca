@@ -108,6 +108,8 @@ footer
 	background: #424242;
 	min-height: 100px;
 	margin-top: 1.5em;
+	color: white;
+	padding: .5em;
 }
 
 #art_social p  
@@ -236,25 +238,25 @@ footer
 	text-transform: none;
 }
 
-.blanco .contenedor #welcome, .blanco .contenedor figure
+.blanco .contenedor #welcome, .blanco .contenedor #logo_rcontacto
 
 {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.blanco .contenedor figure
+.blanco .contenedor #logo_rcontacto
 {
 	float: right;
 	margin: 1em 1em 0 1em;
 }
 
-.blanco .contenedor figure img
+.blanco .contenedor #logo_rcontacto img
 
 {   
 	width: 127px;
-/*	border-radius: 50%;
-	box-shadow: rgba(32,255,0,.9) 0px 0px 50px;*/
+	/*border-radius: 50%;*/
+	/*box-shadow: rgba(32,255,0,.9) 0px 0px 50px;*/
 
 }
  
@@ -278,8 +280,64 @@ footer
 	background: #ECF0F1;
 	margin: .5em 5% 0em 5%;
 	max-width: 90%;
-	padding-top: 1em;
+	padding: .5em 0;
+	overflow: hidden;
+	text-align: inherit;
+}
 
+.img_noticias, .titulo, .text_news, .boton_news
+{
+	/*display: inline-block;*/
+}
+
+.noticia .img_noticias
+{
+	margin: .5em;
+	padding: 0;
+}
+.noticia .img_noticias img
+{
+	width: 100%;
+	border: solid white 2px;
+}
+
+.noticia .titulo
+{
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: .2em;
+	font-style: italic;
+	color: #424242;
+	padding-left: .5em;
+}
+
+.noticia .titulo a
+{
+	text-decoration: none;
+	color: #424242;
 
 }
 
+.noticia .text_news
+{
+	display: none;
+}
+
+.noticia .boton_news
+{
+	margin: 0;
+}
+
+.noticia .boton_news a
+{
+	background: green;
+	padding: .5em 1em;
+	border-radius: .3em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	display: none;
+	float: right;
+	margin-right: .5em;
+}
