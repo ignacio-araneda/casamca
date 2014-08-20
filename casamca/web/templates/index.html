@@ -1,19 +1,21 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="es_ES">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Casa Apostólica</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="css/nivo-slider.css">	
-	<link rel="stylesheet" href="css/default/default.css">
+	<link rel="stylesheet" href="{% static "css/normalize.css" %}">
+	<link rel="stylesheet" href="{% static "css/estilos.css" %}">
+	<link rel="stylesheet" href="{% static "css/nivo-slider.css" %}">	
+	<link rel="stylesheet" href="{% static "css/default/default.css" %}">
+	<link rel="icon" type="ico" href="img/favicon.ico" />
 </head>
 <body>
 	<header>
 		<div class="contenedor">
 			<div id="box_logo_nav">
-				<figure id="logo_nav"> <img src="img/logomca.png">
+				<figure id="logo_nav"> <img src="{% static "img/logomca.png"%}">
 				</figure>
 				<a href="#" id="boton" class="amenu icon-menu"></a>
 				<nav id="menu2">
@@ -75,14 +77,14 @@
 		<div id="principal" class="contenedor">	
 			<div class="slider-wrapper theme-default">
 		        <div id="slider" class="nivoSlider">
-		            <img src="img/slide/img_mediana.jpg" data-thumb="img/slide/img_mediana.jpg" alt="" />
-		            <img src="img/slide/img_slide_deboras.jpg" data-thumb="images/slide/img_slide_deboras.jpg" alt="" />
-		            <img src="img/slide/nueva_web.jpg" data-thumb="img/slide/nueva_web.jpg" alt="" data-transition="slideInLeft" />		            
+		            <img src="{% static "img/slide/img_mediana.jpg"%}" data-thumb="{% static "img/slide/img_mediana.jpg"%}" alt="" />
+		            <img src="{% static "img/slide/img_slide_deboras.jpg"%}" data-thumb="{% static "images/slide/img_slide_deboras.jpg"%}" alt="" />
+		            <img src="{% static "img/slide/nueva_web.jpg"%}" data-thumb={% static "img/slide/nueva_web.jpg"%}" alt="" data-transition="slideInLeft" />		            
 		        </div>		        
 		    </div>
 
 			<p id="welcome"> <strong>escucha la <br><span class="rojo">96.3 fm</span></strong> </p>
-			<figure id="logo_rcontacto"><img src="img/logo_contacto.png"></figure>
+			<figure id="logo_rcontacto"><img src="{% static "img/logo_contacto.png"%}"></figure>
 		</div>
 	</section>
 
@@ -121,19 +123,19 @@
 			</article>		
 			<article class="noticia">
 				<p class="titulo"><a href="#">Nueva pagina web</a></p>
-				<figure class="img_noticias"><img src="img/img_noticia.jpg"></figure>
+				<figure class="img_noticias"><img src="{% static "img/img_noticia.jpg"%}"></figure>
 				<p class="text_news">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
 				<p class="boton_news"><a href="#">leer mas</a></p>
 			</article>
 			<article class="noticia">
 				<p class="titulo"><a href="#">Zona de Avivamiento</a></p>
-				<figure class="img_noticias"><img src="img/img_noticia.jpg"></figure>
+				<figure class="img_noticias"><img src="{% static "img/img_noticia.jpg"%}"></figure>
 				<p class="text_news">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
 				<p class="boton_news"><a href="#">leer mas</a></p>
 			</article>
 			<article class="noticia">
 				<p class="titulo"><a href="#">Fans page!</a></p>
-				<figure class="img_noticias"><img src="img/img_noticia.jpg"></figure>
+				<figure class="img_noticias"><img src="{% static "img/img_noticia.jpg"%}"></figure>
 				<p class="text_news">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
 				<p class="boton_news"><a href="#">leer mas</a></p>
 			</article>
@@ -142,7 +144,7 @@
 
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="js/formulario.js"></script>
+	<script src="{% static "js/formulario.js" %}"></script>
 	<div id="fb-root"></div>
 	<script>
 		function facebook () 
@@ -157,7 +159,7 @@
 		}
 		$(document).on('ready', facebook);
     </script>
-    <script type="text/javascript" src="js/nivo.slider.js"></script>
+    <script type="text/javascript" src="{% static "js/nivo.slider.js"%}"></script>
     <script type="text/javascript">
 		$(window).load(function() {
 		    $('#slider').nivoSlider();
