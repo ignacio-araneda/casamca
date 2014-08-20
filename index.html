@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Casa Apostólica</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/estilos.css"> 
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/nivo-slider.css">	
+	<link rel="stylesheet" href="css/default/default.css">
 </head>
 <body>
 	<header>
@@ -68,8 +70,21 @@
 			</div>
 		</div>	
 	</header>
+
 	<section class="blanco">
 		<div id="principal" class="contenedor">	
+			<div class="slider-wrapper theme-default">
+		        <div id="slider" class="nivoSlider">
+		            <img src="img/toystory.jpg" data-thumb="img/toystory.jpg" alt="" />
+		            <a href="http://dev7studios.com"><img src="img/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
+		            <img src="img/walle.jpg" data-thumb="img/walle.jpg" alt="" data-transition="slideInLeft" />
+		            <img src="img/nemo.jpg" data-thumb="img/nemo.jpg" alt="" title="#htmlcaption" />
+		        </div>
+		        <div id="htmlcaption" class="nivo-html-caption">
+		            <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+		        </div>
+		    </div>
+
 			<p id="welcome"> <strong>escucha la <br><span class="rojo">96.3 fm</span></strong> </p>
 			<figure id="logo_rcontacto"><img src="img/logo_contacto.png"></figure>
 		</div>
@@ -133,7 +148,7 @@
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="formulario.js"></script>
 	<div id="fb-root"></div>
-		<script>
+	<script>
 		function facebook () 
 		{
 			(function(d, s, id) {
@@ -145,6 +160,12 @@
 		    }(document, 'script', 'facebook-jssdk'));
 		}
 		$(document).on('ready', facebook);
-	    </script>
+    </script>
+    <script type="text/javascript" src="js/nivo.slider.js"></script>
+    <script type="text/javascript">
+		$(window).load(function() {
+		    $('#slider').nivoSlider();
+		});
+	</script>
 </body>
 </html>
