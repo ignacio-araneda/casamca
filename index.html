@@ -69,9 +69,9 @@
 		</div>	
 	</header>
 	<section class="blanco">
-		<div id="principal" class="contenedor">		
-			<figure id="logo_rcontacto"><img src="img/logo_contacto.png"></figure>
+		<div id="principal" class="contenedor">	
 			<p id="welcome"> <strong>escucha la <br><span class="rojo">96.3 fm</span></strong> </p>
+			<figure id="logo_rcontacto"><img src="img/logo_contacto.png"></figure>
 		</div>
 	</section>
 
@@ -79,44 +79,51 @@
 		<div class="contenedor">
 			<article id="art_social">
 				<p id="social">social</p>
-				<p>
+				<p id="icon-social">
 					<a href="https://www.facebook.com/CasaApostolicaMCA" target="_blank" class="icon-facebook"></a>
 					<a class="icon-youtube"></a>
 					<a class="icon-vimeo2"></a>
 					
 				</p>
 			</article>
+			<div id="box_social1">
 			<article id="video">
 				<iframe src="http://player.vimeo.com/video/101877400">
 				</iframe>
 			</article>
-
 			<article class="box_predicas"> Predicaciones <br>video</article>
 			<article class="box_predicas"> Predicaciones <br> texto</article>
+			</div>
+			<div id="box_social2">
+				<aside>
+					<div class="fb-like-box" data-href="https://www.facebook.com/CasaApostolicaMCA" data-width="300px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true">
+          			</div>
+				</aside>
+			</div>
 
 		</div>
 	</section>
 	<section id="bmedio" class="blanco">
-		<div class="contenedor">
+		<div id="cont_noticia" class="contenedor">
 			<article id="art_social">
 				<p id="social">noticias</p>
 			</article>		
 			<article class="noticia">
 				<p class="titulo"><a href="#">Nueva pagina web</a></p>
 				<figure class="img_noticias"><img src="img/img_noticia.jpg"></figure>
-				<p class="text_news">bla bla</p>
+				<p class="text_news">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
 				<p class="boton_news"><a href="#">leer mas</a></p>
 			</article>
 			<article class="noticia">
 				<p class="titulo"><a href="#">Zona de Avivamiento</a></p>
 				<figure class="img_noticias"><img src="img/img_noticia.jpg"></figure>
-				<p class="text_news">bla bla</p>
+				<p class="text_news">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
 				<p class="boton_news"><a href="#">leer mas</a></p>
 			</article>
 			<article class="noticia">
 				<p class="titulo"><a href="#">Fans page!</a></p>
 				<figure class="img_noticias"><img src="img/img_noticia.jpg"></figure>
-				<p class="text_news">bla bla</p>
+				<p class="text_news">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</p>
 				<p class="boton_news"><a href="#">leer mas</a></p>
 			</article>
 	</section>
@@ -125,5 +132,19 @@
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="formulario.js"></script>
+	<div id="fb-root"></div>
+		<script>
+		function facebook () 
+		{
+			function(d, s, id) {
+		      var js, fjs = d.getElementsByTagName(s)[0];
+		      if (d.getElementById(id)) return;
+		      js = d.createElement(s); js.id = id;
+		      js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=497635550345655";
+		      fjs.parentNode.insertBefore(js, fjs);
+		    }(document, 'script', 'facebook-jssdk'));
+		}
+		$(document).on('ready', facebook);
+	    </script>
 </body>
 </html>
